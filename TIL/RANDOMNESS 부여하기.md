@@ -81,6 +81,12 @@ parent.appendChild(child); // 로깅하면 <span>
 - 자식 노드 중 맨 앞에 배치
 - 노드객체와 DOMString 모두 추가 가능
 
+`Node.insertBefore(삽입할 노드, 기준노드)`
+
+- 기존 노드, 즉 참조된 노드(referenceNode) 앞에 자식노드를 추가한다
+- referenceNode가 없다면 명시적으로 null을 전달해야 함!
+- referenceNode가 null일 경우 자식 노드 목록 끝에 삽입된다
+
 <br/><br/>
 
 ---
