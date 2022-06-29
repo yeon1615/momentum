@@ -17,6 +17,7 @@ function paintToDo(newToDo) {
   toDoItem.innerText = newToDo.text;
   const deleteBtn = document.createElement('button');
   deleteBtn.innerText = '✖';
+  deleteBtn.id = 'delete-btn';
   toDoList.prepend(li);
   li.appendChild(toDoItem);
   li.appendChild(deleteBtn);
