@@ -29,6 +29,10 @@ function paintToDo(newToDo) {
     saveToDos();
   }
   deleteBtn.addEventListener('click', deleteToDo);
+  function toDoClicked() {
+    toDoItem.style.textDecoration = 'line-through';
+  }
+  toDoItem.addEventListener('click', toDoClicked);
 }
 
 function handleToDoSubmit(event) {

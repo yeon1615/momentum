@@ -49,7 +49,7 @@ input::placeholder {
   right: 0px;
   bottom: 0px;
   z-index: -1;
-  opacity: 80%;
+  filter: brightness(70%);
   background-size: cover;
 }
 
@@ -78,7 +78,7 @@ input::placeholder {
 
 #clock {
   text-align: center;
-  font-size: 120px;
+  font-size: 130px;
   margin: 0;
 }
 
@@ -88,6 +88,12 @@ input::placeholder {
 
 .greeting {
   font-size: 50px;
+}
+
+@media screen and (max-width: 620px) {
+  .greeting {
+    font-size: 40px;
+  }
 }
 
 #login-input {
@@ -114,12 +120,13 @@ input::placeholder {
 #todo-list li {
   display: flex;
   align-items: center;
+  font-size: 25px;
 }
 
 #delete-btn {
   background: transparent;
   border: none;
-  font-size: 17px;
+  font-size: 25px;
   cursor: pointer;
 }
 
@@ -132,4 +139,10 @@ input::placeholder {
   align-items: center;
   line-height: 2;
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 620px) {
+  #quotes {
+    font-size: 13px;
+  }
 }
